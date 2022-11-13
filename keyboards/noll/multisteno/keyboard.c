@@ -20,20 +20,11 @@
 #define LED_TGL()
 #endif
 
-void keyboard_pre_init_user(void){
-    
+void keyboard_pre_init_user(void) {
     // Initialize LED pins to correct setting
     palSetPadMode(GPIOA, 0, PAL_MODE_OUTPUT_PUSHPULL); // 6U correct
     palSetPadMode(GPIOA, 1, PAL_MODE_OUTPUT_PUSHPULL); // 6U correct
-
 }
 
-void matrix_init_kb(void){
-
-    RED_LED_ON();
-    GREEN_LED_ON();
-    wait_ms(500);
-    RED_LED_OFF();
-    //GREEN_LED_OFF();
-
+void matrix_init_kb(void) {
 }
